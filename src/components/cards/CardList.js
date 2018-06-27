@@ -10,7 +10,10 @@ import ficimage from './resources/images/fictionaluniversity.PNG'
 
 import ProjectInfo from './ProjectInfo';
 const styles = {
-
+    container: {
+        width: '100%',
+        marginLeft: '6px'
+    }
 }
 
 const CardList = (props) => {
@@ -24,7 +27,7 @@ const CardList = (props) => {
     })
     return (
         <div className="gridlayout">
-        <Grid  container justify="space-around" alignItems="center" spacing={24}>
+        <Grid className={classes.container} container justify="space-around" align-items="center" spacing={24}>
             {card}
         </Grid>
         </div>

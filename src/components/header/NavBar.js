@@ -12,6 +12,7 @@ import DrawerList from '../drawerlist/DrawerList';
 const styles = theme => ({
   header: {
     backgroundColor: theme.palette.primary,
+    width: '100%'
   },
   list: {
     width: 225,
