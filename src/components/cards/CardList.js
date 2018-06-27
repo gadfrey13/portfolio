@@ -12,7 +12,7 @@ import ProjectInfo from './ProjectInfo';
 const styles = {
     container: {
         width: '100%',
-        marginLeft: '6px'
+        marginLeft: '0px'
     }
 }
 
