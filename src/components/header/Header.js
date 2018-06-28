@@ -12,7 +12,7 @@ const Header = (props) => {
     const { classes } = props;
   return (
     <Fragment>
-      <AppBar position='sticky'>
+      <AppBar className={classes.appbar} position='sticky'>
         <Toolbar>
           <IconButton
             className= "hold"

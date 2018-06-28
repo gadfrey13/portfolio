@@ -12,7 +12,7 @@ import DrawerList from '../drawerlist/DrawerList';
 const styles = theme => ({
   header: {
     backgroundColor: theme.palette.primary,
-    width: '100%'
+    width: '100%',
   },
   list: {
     width: 225,
@@ -60,7 +60,7 @@ class NavBar extends Component {
     );
 
     return (
-      <Fragment>
+      <div>
         <AppBar className={classes.header} position="static" color="primary">
           <Toolbar>
           <IconButton
@@ -86,7 +86,7 @@ class NavBar extends Component {
           {sideList}
           </div>
         </Drawer>
-      </Fragment>
+      </div>
     )
   }
 };
