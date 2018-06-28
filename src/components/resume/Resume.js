@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import {withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import './Resume.css';
+import ProfileCard from '../cards/ProfileCard';
 const styles = theme => ({
     paper: {
         maxWidth: '960px'
@@ -10,6 +11,9 @@ const styles = theme => ({
     container:{
       marginTop: '10px',
       width: '100%'
+    },
+    width:{
+        width: '100%',
     },
     main: {
         background: '#3292a8'
@@ -39,9 +43,7 @@ const Resume = (props) => {
 
                         <Grid container >
                             <Grid item xs={12} md={12} lg={12} xl={12}>
-                                <Paper className={classes.side}>
-                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, odit aut, eos iure deleniti officia, alias totam quas dolores neque dolorum. Voluptas harum voluptatibus in quasi eum quas, molestiae dolore!
-                                 </Paper>
+                                 <ProfileCard /> 
                             </Grid>
                             
                             <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
