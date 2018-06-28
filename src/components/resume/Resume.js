@@ -4,13 +4,14 @@ import {withStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import './Resume.css';
 import ProfileCard from '../cards/ProfileCard';
+import ContactList from '../contactlist/ContactList';
 const styles = theme => ({
     paper: {
         maxWidth: '960px'
     },
     container:{
       marginTop: '10px',
-      width: '100%'
+      width: '100%',
     },
     width:{
         width: '100%',
@@ -23,11 +24,16 @@ const styles = theme => ({
     },
 
     addmargin:{
-        marginTop: '4px',
+        marginTop: '16px',
     },
 
     removePadding:{
         padding: '0px',
+    },
+
+    cont: {
+        maxWidth: '100%',
+        margin: '0px'
     }
 })
 
@@ -38,8 +44,8 @@ const Resume = (props) => {
            
             <Grid className={classes.container} container  justify='center' >
                 <Paper className={classes.paper}>
-                <Grid container direction='row' wrap='wrap' spacing={16}>
-                    <Grid item xs={12} md={3} lg={3} xl={3}>
+                <Grid  className={classes.cont} container direction='row' wrap='wrap' spacing={16}>
+                    <Grid  item xs={12} md={3} lg={3} xl={3}>
 
                         <Grid container >
                             <Grid item xs={12} md={12} lg={12} xl={12}>
@@ -48,7 +54,7 @@ const Resume = (props) => {
                             
                             <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
                                 <Paper className={classes.side}>
-                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, odit aut, eos iure deleniti officia, alias totam quas dolores neque dolorum. Voluptas harum voluptatibus in quasi eum quas, molestiae dolore!
+                                    <ContactList />
                                  </Paper>
                             </Grid>
                         </Grid>
