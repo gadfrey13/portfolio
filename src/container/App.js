@@ -7,6 +7,14 @@ import { Toolbar, Typography } from '@material-ui/core';
 import CardList from '../components/cards/CardList';
 import Resume from '../components/resume/Resume';
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      route: ''
+    }
+  }
+
   render() {
     return (
       <Fragment>

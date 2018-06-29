@@ -9,6 +9,7 @@ import EducationCard from '../cards/EducationCard';
 import CareerProfile from '../cards/CareerProfile';
 import Experience from '../cards/Experience';
 import SkillsCard from '../cards/SkillsCard';
+import Project from '../cards/Project';
 const styles = theme => ({
     paper: {
         maxWidth: '960px',
@@ -85,6 +86,9 @@ const Resume = (props) => {
                                  </Grid>
                                  <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
                                      <Experience />
+                                 </Grid>
+                                 <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
+                                     <Project />
                                  </Grid>
                          </Grid>
                       
