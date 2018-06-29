@@ -5,9 +5,11 @@ import Paper from '@material-ui/core/Paper';
 import './Resume.css';
 import ProfileCard from '../cards/ProfileCard';
 import ContactList from '../contactlist/ContactList';
+import EducationCard from '../cards/EducationCard';
+import CareerProfile from '../cards/CareerProfile';
 const styles = theme => ({
     paper: {
-        maxWidth: '960px'
+        maxWidth: '960px',
     },
     container:{
       marginTop: '10px',
@@ -57,15 +59,24 @@ const Resume = (props) => {
                                     <ContactList />
                                  </Paper>
                             </Grid>
+
+                                <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
+                                    <Paper className={classes.side}>
+                                        <EducationCard/>
+                                     </Paper>
+                                </Grid>
                         </Grid>
 
 
                      </Grid>
 
                      <Grid item xs={12} md={9} lg={9} xl={9} >
-                        <Paper className={classes.main}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sint harum asperiores laborum, totam tempora sed placeat, eos et soluta ipsum a quo illum dicta natus aliquid recusandae vitae consequatur.
-                        </Paper>
+                         <Grid container>
+                                <Grid item xs={12} md={12} lg={12} xl={12}>
+                                     <CareerProfile />
+                                 </Grid>
+                         </Grid>
+                      
                      </Grid>
                 </Grid>
                 </Paper>

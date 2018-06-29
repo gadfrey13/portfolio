@@ -34,7 +34,7 @@ const ContactList = (props) => {
                     <ListItemIcon color='primary'>
                         <Email className={classes.icon}/>
                     </ListItemIcon>
-                    <Typography className={classes.text}>
+                    <Typography className={classes.text} component="div">
                         <div className="text">
                             gadfreybalacy@gmail.com
                         </div>
@@ -42,9 +42,9 @@ const ContactList = (props) => {
                 </ListItem>
                 <ListItem className={classes.list}>
                     <ListItemIcon color='primary'>
-                        <Phone className={classes.icon}/>
+                        <Phone className={classes.icon} />
                     </ListItemIcon>
-                    <Typography className={classes.text}>
+                    <Typography className={classes.text} component="div">
                         <div className="text">
                             (209) 676-9998
                         </div>
@@ -54,7 +54,7 @@ const ContactList = (props) => {
                     <ListItemIcon color='primary'>
                         <Github className={classes.icon}/>
                     </ListItemIcon>
-                    <Typography className={classes.text}>
+                    <Typography className={classes.text} component="div">
                         <div className="text">
                         https://github.com/gadfrey13
                         </div>
