@@ -31,6 +31,9 @@ const EducationCard = props => {
                  <Typography className={classes.university}>
                     California State University, Sacramento
                  </Typography>
+                 <Typography className={classes.university}>
+                    Graduated: May 2018
+                 </Typography>
                </CardContent>
             </Card>
         </div>
