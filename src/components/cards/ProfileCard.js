@@ -11,7 +11,11 @@ const styles = theme => ({
     },
     card: {
         width: '100%',
-        background: '#42eef4',
+        background: '#3292a8',
+    },
+
+    title: {
+        color: '#ffffff'
     }
 })
 
@@ -24,7 +28,7 @@ const ProfileCard = (props) => {
                 className={classes.media}
                 image="https://avatars3.githubusercontent.com/u/18605878?s=400&u=43ce2aa03beb74884ac1270974cd019823abcfc5&v=4"
                 title="Contemplative Reptile"/>
-                <CardHeader title="Gadfrey Balacy" subheader="Java Developer and Web Developer"/>
+                <CardHeader classes={{title: classes.title, subheader: classes.title}} title="Gadfrey Balacy" subheader="Java Developer and Web Developer"/>
            </Card>
         </div>
     )
