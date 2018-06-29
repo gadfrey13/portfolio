@@ -57,7 +57,7 @@ const Experience = (props) => {
                     Calpers
                 </Typography>
                 <Typography className={classes.expbody}>
-                A kiosk in which guest at CalPers can use to find and contact employees. Also, provide guest direction to employees office. 
+                The project was web application kiosk in which guest at CalPers could use to find and contact employees. Also, provide guest direction to employees office. 
                 Allow for employees to remove or limit the information shown in the kiosk. 
                 The kiosk was created using PHP, Javascript, CSS, and MySql. During development, we use XAMPP as our server and database. 
                 Also, we used GitHub for version control.
@@ -78,7 +78,7 @@ const Experience = (props) => {
                 <Typography className={classes.expbody}>
                 Modern movie classification using machine learning algorithm. 
                 The dataset was a collection of 750 thousand tags written by 270 thousand users. We filtered that collection to a smaller sample of data to reduce training time. 
-                The algorithm we use were Logistic Regression, Decision Tree, Neural Network from the python libraries pandas and learn.
+                The algorithm we use were Logistic Regression, Decision Tree, Neural Network from the python libraries pandas and sklearn.
                 </Typography>
             </CardContent>
         </Card>
