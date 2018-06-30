@@ -3,11 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import { Toolbar, Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import { withStyles } from '@material-ui/core/styles';
-import DrawerList from '../drawerlist/DrawerList';
 
 const styles = theme => ({
   header: {
@@ -32,32 +28,10 @@ const styles = theme => ({
 
 class NavBar extends Component {
   
-  constructor(){
-    super()
-    this.state = {
-      open: false,
-    }
-  }
-
-  handleDrawer = (event) => {
-     let bol = !this.state.open;
-     this.setState({open: bol})
-  }
-
 
 
   render(){
-    const { classes } = this.props;
-    const sideList = (
-      // <div className={classes.list}>
-      //   <List>{mailFolderListItems}</List>
-      //   <Divider />
-      //   <List>{otherMailFolderListItems}</List>
-      // </div>
-      <div className={classes.list} >
-        <DrawerList />
-      </div>
-    );
+    const { classes,handleDrawer } = this.props;
 
     return (
       <div>
@@ -67,7 +41,7 @@ class NavBar extends Component {
               className= "hold"
               color="inherit"
               aria-label="Menu"
-              onClick={this.handleDrawer}
+              onClick={handleDrawer}
             >
               <MenuIcon />
             </IconButton>
@@ -76,16 +50,6 @@ class NavBar extends Component {
             </Typography>
           </Toolbar>
         </AppBar>
-        <Drawer className={classes.drawer} open={this.state.open} onClose={this.handleDrawer} >
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.handleDrawer}
-            onKeyDown={this.handleDrawer}
-          >
-          {sideList}
-          </div>
-        </Drawer>
       </div>
     )
   }
