@@ -9,12 +9,26 @@ import Home from '@material-ui/icons/Home';
 import School from '@material-ui/icons/School';
 import Email from '@material-ui/icons/Email';
 import Description from '@material-ui/icons/Description';
+import Drawer from '@material-ui/core/Drawer';
+import { withStyles } from '@material-ui/core/styles';
+import CardList from '../cards/CardList';
+import Resume from '../resume/Resume';
+import { Card } from '@material-ui/core';
 
 const history = createBrowserHistory();
-const DrawerList = (props) => {
-    const {classes} = props;
+
+const styles = theme => ({
+    drawer: {
+        width: 225,
+    }
+})
+
+const Routes = (props) => {
+    const {classes,open, handleDrawer} = props;
     return (
         <Router history={history}>
+        <div>        
+        <Drawer className={classes.drawer} open={open} onClose={handleDrawer}>
         <List> 
             <ListItem button component={Link} to="/">
                 <ListItemIcon>
@@ -28,12 +42,6 @@ const DrawerList = (props) => {
                 </ListItemIcon>
                 <ListItemText primary="Resume"/>
             </ListItem>
-            <ListItem button component={Link} to="/Education">
-                <ListItemIcon>
-                    <School/>
-                </ListItemIcon>
-                <ListItemText primary="Education"/>
-            </ListItem>
 
             <ListItem button component={Link} to="/contact">
                 <ListItemIcon>
@@ -41,10 +49,16 @@ const DrawerList = (props) => {
                 </ListItemIcon>
                 <ListItemText primary="Contact"/>
             </ListItem>
-
+            
         </List>
+        </Drawer>
+        <main>
+            <Route exact path="/" component={CardList}/>
+            <Route path="/resume" component={Resume} />
+        </main>
+        </div>
         </Router>
     )
 }
 
-export default DrawerList;
+export default withStyles(styles)(Routes);
