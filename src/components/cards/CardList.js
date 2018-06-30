@@ -20,7 +20,7 @@ const CardList = (props) => {
     const card = ProjectInfo.map((val,i) => {
         return(
             <Grid key={val.id} item>
-                <ProjectCard pic={ficimage} title={val.title} body={val.body} link={val.link} prompt={val.prompt}/>
+                <ProjectCard pic={val.image} title={val.title} body={val.body} link={val.link} prompt={val.prompt}/>
             </Grid>
         )
     })

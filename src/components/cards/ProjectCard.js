@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Card from '@material-ui/core/Card'
 import {withStyles} from '@material-ui/core/styles'
 import { CardMedia, CardContent, Typography, CardActions, Button } from '@material-ui/core';
-
+import street from './resources/images/street.jpg';
 // const primary = red[500]; // #F44336
 // const accent = purple['A200']; // #E040FB
 // const accent2 = purple.A200; // #E040FB (alternative method)
@@ -11,6 +11,7 @@ const styles= theme =>({
     card:{
         maxWidth: 300,
         position: 'center',
+        background: '#3292a8',
     },
     media: {
         height:0,
@@ -20,7 +21,10 @@ const styles= theme =>({
     },
     title: {
         fontSize: 20,
-        color: theme.palette.primary.light
+        color: 'white',
+    },
+    body: {
+        color: 'white'
     }
 })
 
@@ -32,19 +36,19 @@ const ProjectCard = (props) => {
             <Card className={classes.card} raised={props.bol} styles={styles}>
                 <CardMedia 
                 className={classes.media}
-                image= {pic}
+                image={pic}
                 title= {title}
                 />
                 <CardContent>
                     <Typography className={classes.title} gutterBottom varient="headline" component="h2">
                         {title}
                     </Typography>
-                    <Typography>
+                    <Typography className={classes.body}>
                         {body}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                <Button  size="small" color="primary" href={link} target="_blank">{prompt}</Button>
+                <Button  size="small" className={classes.body} href={link} target="_blank">{prompt}</Button>
                 </CardActions>
             </Card>
         </Fragment>
