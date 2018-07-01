@@ -14,7 +14,7 @@ import { withStyles } from '@material-ui/core/styles';
 import CardList from '../cards/CardList';
 import Resume from '../resume/Resume';
 import { Card } from '@material-ui/core';
-
+import BackgroundAnimation from '../animation/BackgrounAnimation';
 const history = createBrowserHistory();
 
 const styles = theme => ({
