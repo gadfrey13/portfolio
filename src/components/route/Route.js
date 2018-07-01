@@ -42,14 +42,6 @@ const Routes = (props) => {
                 </ListItemIcon>
                 <ListItemText primary="Resume"/>
             </ListItem>
-
-            <ListItem button component={Link} to="/contact">
-                <ListItemIcon>
-                    <Email/>
-                </ListItemIcon>
-                <ListItemText primary="Contact"/>
-            </ListItem>
-            
         </List>
         </Drawer>
         <main>

@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import Alarm from '@material-ui/icons/Alarm';
 import Avatar from '@material-ui/core/Avatar';
 const styles = theme => ({
     card: {

@@ -1,12 +1,12 @@
 //Images 
-import ficimage from './resources/images/fictionaluniversity.PNG'
+import ficimage from './resources/images/rsz_fictionaluniversity.jpg'
 import calpers from './resources/images/calpers.jpg';
-import movie from './resources/images/Movie.PNG';
-import cars from './resources/images/cars.PNG';
-import classification from './resources/images/classification.PNG';
-import evolutionary from './resources/images/evolutionary.PNG';
-import landing from './resources/images/landing.PNG';
-import robofriend from './resources/images/robofriends.PNG';
+import movie from './resources/images/Movie.jpg';
+import cars from './resources/images/cars.jpg';
+import classification from './resources/images/classification.jpg';
+import evolutionary from './resources/images/evolutionary.jpg';
+import landing from './resources/images/rsz_landing.jpg';
+import robofriend from './resources/images/robofriends.jpg';
 
 const ProjectInfo = [
     {
@@ -70,6 +70,7 @@ const ProjectInfo = [
         title: "Robo Friends",
         body: "This was to practice creating react websites and practice using rest apis in react.",
         link: "https://gadfrey13.github.io/robofriends/",
+        prompt: "Website Link",
         image: robofriend
     }
 ]
