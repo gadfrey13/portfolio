@@ -4,10 +4,8 @@ import ProjectCard from './ProjectCard';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 import gridlayout from './CardList.css';
-
-//Images
-import ficimage from './resources/images/fictionaluniversity.PNG'
 import ProjectInfo from './ProjectInfo';
+
 const styles = {
     container: {
         width: '100%',

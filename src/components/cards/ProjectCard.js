@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import Card from '@material-ui/core/Card'
 import {withStyles} from '@material-ui/core/styles'
 import { CardMedia, CardContent, Typography, CardActions, Button } from '@material-ui/core';
-import street from './resources/images/street.jpg';
 // const primary = red[500]; // #F44336
 // const accent = purple['A200']; // #E040FB
 // const accent2 = purple.A200; // #E040FB (alternative method)
@@ -48,7 +47,7 @@ const ProjectCard = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                <Button  size="small" className={classes.body} href={link} target="_blank">{prompt}</Button>
+                <Button  size="small" className={classes.body} href={link} rel="noopener">{prompt}</Button>
                 </CardActions>
             </Card>
         </Fragment>
