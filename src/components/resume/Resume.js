@@ -10,6 +10,7 @@ import CareerProfile from '../cards/CareerProfile';
 import Experience from '../cards/Experience';
 import SkillsCard from '../cards/SkillsCard';
 import Project from '../cards/Project';
+import { Slide } from '@material-ui/core';
 const styles = theme => ({
     paper: {
         maxWidth: '960px',
@@ -39,7 +40,11 @@ const styles = theme => ({
     cont: {
         maxWidth: '100%',
         margin: '0px'
-    }
+    },
+    slide: {
+        direction: 'down',
+    },
+
 })
 
 const Resume = (props) => {
@@ -51,35 +56,42 @@ const Resume = (props) => {
                 <Paper className={classes.paper}>
                 <Grid  className={classes.cont} container direction='row' wrap='wrap' spacing={16}>
                     <Grid  item xs={12} md={3} lg={3} xl={3}>
-
+                    <Slide in className={classes.slide} timeout={{enter: 1000}}>
                         <Grid container >
+                            
                             <Grid item xs={12} md={12} lg={12} xl={12}>
                                  <ProfileCard /> 
                             </Grid>
-                            
+                        
+                           
                             <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
                                 <Paper className={classes.side}>
                                     <ContactList />
                                  </Paper>
                             </Grid>
-
+                      
+                         
                                 <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
                                     <Paper className={classes.side}>
                                         <EducationCard/>
                                      </Paper>
                                 </Grid>
-                                
+
+                  
                                 <Grid className={classes.addmargin} item xs={12} md={12} lg={12} xl={12}>
                                     <Paper className={classes.side}>
                                         <SkillsCard />
                                      </Paper>
                                 </Grid>
+                   
                         </Grid>
-
+                        </Slide>
 
                      </Grid>
-
+                
                      <Grid item xs={12} md={9} lg={9} xl={9} >
+                         <Slide in className={classes.slide} timeout={{enter: 1000}}>
+                          <div>
                          <Grid container>
                                 <Grid item xs={12} md={12} lg={12} xl={12}>
                                      <CareerProfile />
@@ -91,7 +103,8 @@ const Resume = (props) => {
                                      <Project />
                                  </Grid>
                          </Grid>
-                      
+                        </div>
+                        </Slide>
                      </Grid>
                 </Grid>
                 </Paper>

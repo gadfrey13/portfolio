@@ -30,7 +30,7 @@ const Routes = (props) => {
         <div>        
         <Drawer className={classes.drawer} open={open} onClose={handleDrawer}>
         <List> 
-            <ListItem button component={Link} to="/">
+            <ListItem button component={Link} to="/portfolio">
                 <ListItemIcon>
                     <Home  color="primary" />
                 </ListItemIcon>
@@ -45,7 +45,7 @@ const Routes = (props) => {
         </List>
         </Drawer>
         <main>
-            <Route exact path="/" component={CardList}/>
+            <Route exact path="/portfolio" component={CardList}/>
             <Route path="/resume" component={Resume} />
         </main>
         </div>
