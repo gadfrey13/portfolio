@@ -7,6 +7,7 @@ import classification from './resources/images/classification.jpg';
 import evolutionary from './resources/images/evolutionary.jpg';
 import landing from './resources/images/rsz_landing.jpg';
 import robofriend from './resources/images/robofriends.jpg';
+import facerecognition from './resources/images/FaceRecogniton.png';
 
 const ProjectInfo = [
     {
@@ -72,6 +73,14 @@ const ProjectInfo = [
         link: "https://gadfrey13.github.io/robofriends/",
         prompt: "Website Link",
         image: robofriend
+    },
+    {
+        id:9,
+        title: 'Smart Brain',
+        body: 'Practice using rest apis, node.js, postgreSQL and others',
+        link: 'https://recognitionsmartbrain.herokuapp.com/',
+        prompt: 'Website Link',
+        image: facerecognition
     }
 ]
 
