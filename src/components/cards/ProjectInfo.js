@@ -8,6 +8,7 @@ import evolutionary from './resources/images/evolutionary.jpg';
 import landing from './resources/images/rsz_landing.jpg';
 import robofriend from './resources/images/robofriends.jpg';
 import facerecognition from './resources/images/FaceRecognition.jpg';
+import starwars from './resources/images/starwars.jpg';
 
 const ProjectInfo = [
     {
@@ -77,10 +78,18 @@ const ProjectInfo = [
     {
         id:9,
         title: 'Smart Brain',
-        body: 'Practice using rest apis, node.js, postgreSQL and others',
+        body: 'Practice using rest apis, node.js, postgreSQL,react and others',
         link: 'https://recognitionsmartbrain.herokuapp.com/',
         prompt: 'Website Link',
         image: facerecognition
+    },
+    {
+        id:10,
+        title: 'Starwars',
+        body: 'Starwars Characters practicing with rest apis and react',
+        link: 'https://gadfrey13.github.io/starwars/',
+        prompt: 'Website Link',
+        image: starwars
     }
 ]
 
