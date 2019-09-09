@@ -7,7 +7,7 @@ import classification from './resources/images/classification.jpg';
 import evolutionary from './resources/images/evolutionary.jpg';
 import landing from './resources/images/rsz_landing.jpg';
 import robofriend from './resources/images/robofriends.jpg';
-import facerecognition from './resources/images/FaceRecogniton.png';
+import facerecognition from './resources/images/FaceRecognition.jpg';
 
 const ProjectInfo = [
     {
