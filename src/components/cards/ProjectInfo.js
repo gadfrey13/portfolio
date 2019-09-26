@@ -78,7 +78,7 @@ const ProjectInfo = [
     {
         id:9,
         title: 'Smart Brain',
-        body: 'Practice using rest apis, node.js, postgreSQL,react and others',
+        body: 'Practice using rest apis, node.js, postgreSQL,react, heroku and others. Note. Initial start is slow. Reason using hobby-dev servers from heroku. ',
         link: 'https://recognitionsmartbrain.herokuapp.com/',
         prompt: 'Website Link',
         image: facerecognition
