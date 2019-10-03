@@ -8,7 +8,8 @@ import evolutionary from './resources/images/evolutionary.jpg';
 import landing from './resources/images/rsz_landing.jpg';
 import robofriend from './resources/images/robofriends.jpg';
 import facerecognition from './resources/images/FaceRecognition.jpg';
-import starwars from './resources/images/starwars.jpg';
+import starwars from './resources/images/starwars.JPG';
+import weather from './resources/images/weather.JPG';
 
 const ProjectInfo = [
     {
@@ -38,7 +39,7 @@ const ProjectInfo = [
     {
         id:4,
         title: "Battle Cars",
-        body: "Battle cars is a first person shooter last man standing with car avatars. The game was created using java and javascript and basic game engine called rage. The game also has multi player mode. But the multiplayer mode is very limited since the server and connection to the server was created by me. So it lacks the ability to be played in different networks. You can get the full intructions in how to set up the game in my github repository",
+        body: "Battle Cars is a first person shooter last man standing with cars. The game was created using java and javascript and basic game engine called rage. The game also has multi player mode. But the multiplayer mode is very limited since the server and connection to the server was created by me. So it lacks the ability to be played in different networks. You can get the full intructions in how to set up the game in my github repository",
         link: "https://github.com/gadfrey13/Battle-Cars/tree/master/BattleCars",
         prompt: "Github Repository",
         image: cars,
@@ -78,7 +79,7 @@ const ProjectInfo = [
     {
         id:9,
         title: 'Smart Brain',
-        body: 'Practice using rest apis, node.js, postgreSQL,react, heroku and others. Note. Initial start is slow. Reason using hobby-dev servers from heroku. ',
+        body: 'Practice using rest apis, node.js, postgreSQL,react, redux, heroku and others. Note. Initial start is slow. Reason using hobby-dev servers from heroku. ',
         link: 'https://recognitionsmartbrain.herokuapp.com/',
         prompt: 'Website Link',
         image: facerecognition
@@ -90,6 +91,14 @@ const ProjectInfo = [
         link: 'https://gadfrey13.github.io/starwars/',
         prompt: 'Website Link',
         image: starwars
+    },
+    {
+        id:11,
+        title: 'Weather App',
+        body: 'An application the tells a cityies current weather and its five day weather forecast. Technology use rest apis, node.js, postgreSQL,react, redux, heroku and others. Server is hosted on heroku and front-end is hosted on github ',
+        link: 'https://gadfrey13.github.io/weather',
+        prompt: 'Website Link',
+        image: weather
     }
 ]
 

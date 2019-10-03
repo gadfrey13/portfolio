@@ -82,6 +82,31 @@ In the 2nd part of the project we are tasked to find the genetic programming. We
                 Goal of this project was to get better at using react.js framework and as well as to improve my ability to work with
                 rest api.
                </Typography>
+               <br/>
+               <Typography className={classes.exptitle} component='h3'>
+                  Starwars
+                </Typography>
+                <Typography className={classes.expbody}>
+                The goal of this project was to get better understanding rest Api. Also, to get better understanding of react framework. 
+               </Typography>
+               <br/>
+               <Typography className={classes.exptitle} component='h3'>
+                  SmartBrain
+                </Typography>
+                <Typography className={classes.expbody}>
+                 Smartbrain is a web app the uses CLAIRAI API. That detects faces on pictures. The technology I use to create this 
+                 app. Are react.js, redux, node.js, postgresSQL, heroku, cors, knex, express and bcrypt. Also, i created my own rest api 
+                 to connect the front end to the database.
+               </Typography>
+               <br/>
+               <Typography className={classes.exptitle} component='h3'>
+                  Weather App
+                </Typography>
+                <Typography className={classes.expbody}>
+                 Weather App is a web app the uses OpenWeather API. The web app provides the current weather and a five day forecast. It also allows you to 
+                 create an account so you can save prior weather querys. The technology I use to create this 
+                 app. Are react.js, redux, node.js, postgresSQL, heroku, cors, knex, express and bcrypt. Created my own rest apis to connect front end to backend.
+               </Typography>
 
             </CardContent>
         </Card>

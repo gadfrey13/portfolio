@@ -63,6 +63,13 @@ const SkillsCard = props => {
                 <Chip classes={{label: classes.label}} label="Python" className={classes.chip}/>
                 <Chip classes={{label: classes.label}} label="PHP" className={classes.chip}/>
                 <Chip classes={{label: classes.label}} label="WordPress" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="Redux" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="Socket.io" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="express" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="Node.js" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="Postgress" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="knex" className={classes.chip}/>
+                <Chip classes={{label: classes.label}} label="Material-ui" className={classes.chip}/>
             </CardContent>
         </Card>
     )
