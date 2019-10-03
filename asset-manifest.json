@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.560d114b.css",
   "main.css.map": "static/css/main.560d114b.css.map",
-  "main.js": "static/js/main.052a3bf1.js",
-  "main.js.map": "static/js/main.052a3bf1.js.map",
+  "main.js": "static/js/main.a0074828.js",
+  "main.js.map": "static/js/main.a0074828.js.map",
   "static\\media\\FaceRecognition.jpg": "static/media/FaceRecognition.ad44774a.jpg",
   "static\\media\\Movie.jpg": "static/media/Movie.a72c2bad.jpg",
   "static\\media\\calpers.jpg": "static/media/calpers.744e2c81.jpg",
@@ -12,5 +12,6 @@
   "static\\media\\robofriends.jpg": "static/media/robofriends.87a51fba.jpg",
   "static\\media\\rsz_fictionaluniversity.jpg": "static/media/rsz_fictionaluniversity.c892ec26.jpg",
   "static\\media\\rsz_landing.jpg": "static/media/rsz_landing.2e64ff04.jpg",
-  "static\\media\\starwars.jpg": "static/media/starwars.79dcacc2.jpg"
+  "static\\media\\starwars.JPG": "static/media/starwars.79dcacc2.JPG",
+  "static\\media\\weather.JPG": "static/media/weather.6c1fe5ca.JPG"
 }
